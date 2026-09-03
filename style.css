@@ -3,6 +3,36 @@ body{
     color:#ffffff;
 
 }
+/* 1. التصميم الأساسي: للهواتف الذكية (Mobile First) */
+body {
+    background-color: white;
+    font-size: 14px;
+    padding: 10px;
+}
+
+/* 2. الشاشات المتوسطة: التابلت (Tablets) - من 768 بكسل وأكبر */
+@media (min-width: 768px) {
+    body {
+        font-size: 16px;
+        padding: 20px;
+    }
+}
+
+/* 3. الشاشات الكبيرة: اللاب توب والكمبيوتر (Desktops) - من 992 بكسل وأكبر */
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+}
+
+/* 4. الشاشات الضخمة جداً: (Large Desktops) - من 1200 بكسل وأكبر */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
 .glow-btn{
     background-color: #ffc107;
     color: #000000;
